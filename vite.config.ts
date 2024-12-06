@@ -7,4 +7,10 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    outDir: 'dist', // Default output directory
+  },
+  server: {
+    host: true, // Ensure the host is accessible during local dev
+  },
 });
